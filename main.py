@@ -52,6 +52,9 @@ while(intentos < config["intentos"]):
                         totalgastos= totalgastos + gastos_hechos
                     print("Usted gasto hoy un total de ",round(totalgastos,2))
                     config["saldo"]= config["saldo"]  - totalgastos
+            
+            elif(opcion == 3 ):
+                 pass
 
 #opcion 4 (Muestra el balance disponible actual de nuestro usuario)    
             elif(opcion == 4):
