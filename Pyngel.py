@@ -144,7 +144,11 @@ def menu_secundario():
                 historial=historial_json()
                 with open ("historial.json","r") as file:
                     historial = json.load(file)
-                    print(historial)
+                    
+
+                    for movimientos in historial:
+                         print("Usted hizo un",movimientos["operacion"])
+                         print("De ",movimientos["saldo"],"Bolos")
 
 #opcion 4 (Muestra el balance disponible actual de nuestro usuario)    
         elif(opcion == 4):
